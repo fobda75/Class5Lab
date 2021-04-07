@@ -20,7 +20,7 @@
 <label for="owe-enlisted">Enlisted</label>
 <input type="radio" name="owe" id="owe-enlisted" onclick="enlisted()">
 <br>
-
+<div class="column">
 <fieldset>
     <legend>Officers</legend>
 
@@ -65,26 +65,31 @@
     <br>
 
 </fieldset>
+</div>
 
+<div class="column">
 <fieldset>
     <legend>Warrant Officers</legend>
     <label for="warrant-1">Warrant Officer</label>
-    <input type="radio" name="warrant" id="warrant-1" checked="checked" data-rank="Warrant Officer" data-abbr="WO1" data-paygrade="W-1">
+    <input type="radio" name="warrant" id="warrant-1" checked="checked" disabled="true" data-rank="Warrant Officer" data-abbr="WO1" data-paygrade="W-1">
 
-    <label for="warrant-2">Warrant Officer</label>
-    <input type="radio" name="warrant" id="warrant-2" data-rank="Chief Warrant Officer 2" data-abbr="CWO2" data-paygrade="W-2">
+    <label for="warrant-2">Chief Warrant Officer 2</label>
+    <input type="radio" name="warrant" id="warrant-2" disabled="true" data-rank="Chief Warrant Officer 2" data-abbr="CWO2" data-paygrade="W-2">
 
-    <label for="warrant-3">Warrant Officer</label>
-    <input type="radio" name="warrant" id="warrant-3" data-rank="Chief Warrant Officer 3" data-abbr="CWO3" data-paygrade="W-3">
+    <label for="warrant-3">Chief Warrant Officer 3</label>
+    <input type="radio" name="warrant" id="warrant-3" disabled="true" data-rank="Chief Warrant Officer 3" data-abbr="CWO3" data-paygrade="W-3">
 
-    <label for="warrant-4">Warrant Officer</label>
-    <input type="radio" name="warrant" id="warrant-4" data-rank="Chief Warrant Officer 4" data-abbr="CWO4" data-paygrade="W-4">
+    <label for="warrant-4">Chief Warrant Officer 4</label>
+    <input type="radio" name="warrant" id="warrant-4" disabled="true" data-rank="Chief Warrant Officer 4" data-abbr="CWO4" data-paygrade="W-4">
 
-    <label for="warrant-5">Warrant Officer</label>
-    <input type="radio" name="warrant" id="warrant-5" data-rank="Chief Warrant Officer 5" data-abbr="CWO5" data-paygrade="W-5">
+    <label for="warrant-5">Chief Warrant Officer 5</label>
+    <input type="radio" name="warrant" id="warrant-5" disabled="true" data-rank="Chief Warrant Officer 5" data-abbr="CWO5" data-paygrade="W-5">
 
 </fieldset>
+</div>
 
+
+<div class="column">
 <fieldset>
     <legend>Enlisted</legend>
     <label for="enlisted-recruit">Seaman Recruit</label>
@@ -118,6 +123,7 @@
     <input type="radio" name="enlisted" id="enlisted-cmcpo" data-rank="Command Master Chief" data-abbr="MCPOC" data-paygrade="E-9">
 
 </fieldset>
+</div>
 
 <label for="name-last">Last Name</label>
 <input type="text" name="name" id="name-last">

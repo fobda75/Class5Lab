@@ -10,6 +10,10 @@ $(document).ready(function(){
     $("#owe-warrant").click(function () {
         warrant();
     });
+
+    $("#report").click(function(){
+        reportForDuty();
+    })
 })
 
 
@@ -32,4 +36,9 @@ function enlisted()
     $("input[name=officer]").attr("disabled",true);
     $("input[name=warrant]").attr("disabled",true);
     $("input[name=enlisted]").attr("disabled",false);
+}
+
+function reportForDuty() {
+    let message ="Hello ";
+    message += $("input[disabled=false]")
 }

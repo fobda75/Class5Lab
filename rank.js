@@ -1,20 +1,35 @@
+$(document).ready(function(){
+    $("#owe-officer").click(function () {
+        officer();
+    });
+
+    $("#owe-enlisted").click(function () {
+        enlisted();
+    });
+
+    $("#owe-warrant").click(function () {
+        warrant();
+    });
+})
+
+
 function officer()
 {
-    $(officer).disable("false");
-    $(warrant).disable("true");
-    $(enlisted).disable("true");
+    $("input[name=officer]").attr("disabled",false);
+    $("input[name=warrant]").attr("disabled",true);
+    $("input[name=enlisted]").attr("disabled",true);
 }
 
 function warrant()
 {
-    $(officer).disable("true");
-    $(warrant).disable("false");
-    $(enlisted).disable("true");
+    $("input[name=officer]").attr("disabled",true);
+    $("input[name=warrant]").attr("disabled",false);
+    $("input[name=enlisted]").attr("disabled",true);
 }
 
 function enlisted()
 {
-    $(officer).disable("true");
-    $(warrant).disable("true");
-    $(enlisted).disable("false");
+    $("input[name=officer]").attr("disabled",true);
+    $("input[name=warrant]").attr("disabled",true);
+    $("input[name=enlisted]").attr("disabled",false);
 }
